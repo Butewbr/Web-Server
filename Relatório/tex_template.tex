@@ -1,0 +1,146 @@
+\documentclass[a4paper,12pt]{article}
+
+% template by Bernardo Pandolfi Costa
+
+\usepackage{graphicx}
+\usepackage[
+top=3cm,
+bottom=2cm,
+left=3cm,
+right=2cm,
+]{geometry}
+\usepackage{pdfpages}
+\usepackage{hyperref}
+\usepackage{indentfirst}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{textcomp}
+\usepackage[portuguese]{babel}
+\usepackage[section]{placeins}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
+\usepackage{lipsum}
+% Turn on the style
+\pagestyle{fancy}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{steinmetz}
+\fancyfoot{}
+
+\fancyfoot[R]{\thepage}
+\setlength{\headheight}{16pt}% ...at least 51.60004pt
+
+\definecolor{codegreen}{rgb}{0.48,0.7,0.42}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.5,0,0.82}
+\definecolor{codeblue}{rgb}{0.5, 0.64, 0.74}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.95}
+
+\lstdefinestyle{codestyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegray},
+    keywordstyle=\color{codepurple},
+    numberstyle=\tiny\color{codeblue},
+    stringstyle=\color{codegreen},
+   	breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    basicstyle=\ttfamily
+}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\lstset{
+inputencoding=utf8,
+upquote=true,
+style=codestyle,
+    literate=%
+    {á}{{\'a}}1
+    {à}{{\`a}}1
+    {ã}{{\~a}}1
+    {â}{{\^a}}1
+    {é}{{\'e}}1
+    {ê}{{\^e}}1
+    {í}{{\'i}}1
+    {ó}{{\'o}}1
+    {õ}{{\~o}}1
+    {ô}{{\^o}}1
+    {ú}{{\'u}}1
+    {ü}{{\"u}}1
+    {ç}{{\c{c}}}1
+    {Á}{{\'A}}1
+    {À}{{\`A}}1
+    {Ã}{{\~A}}1
+    {Â}{{\^A}}1
+    {É}{{\'E}}1
+    {Ê}{{\^E}}1
+    {Í}{{\'I}}1
+    {Ó}{{\'O}}1
+    {Õ}{{\~O}}1
+    {Ô}{{\^O}}1
+    {Ú}{{\'U}}1
+    {Ü}{{\"U}}1
+    {Ç}{{\c{C}}}1
+}
+
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=blue
+}
+
+\author{Bernardo Pandolfi Costa}
+\title{Título do Trabalho}
+
+\renewcommand{\contentsname}{Sumário}
+\renewcommand{\figurename}{Figura}
+
+
+\begin{document}
+\makeatletter
+\begin{titlepage}
+    \begin{center}
+    \includegraphics[width=64px]{./assets/vertical_sigla_fundo_claro.png}\\
+        \small
+        \vspace{0.25cm}
+        \textbf{UNIVERSIDADE FEDERAL DE SANTA CATARINA}\\
+		\textbf{CENTRO DE CIÊNCIAS, TECNOLOGIAS E SAÚDE}\\
+		\textbf{DEPARTAMENTO DE COMPUTAÇÃO}\\
+		\textbf{CURSO DE ENGENHARIA DE COMPUTAÇÃO}\\
+        \vspace{7cm}
+        \Large
+        \textbf{\@title}\\
+        \vspace{0.5cm}
+        \normalsize
+        \textbf{\@author}\\
+        \vspace{1.5cm}
+        \small
+        Disciplina:\\
+        Professor:
+        \vfill
+        Araranguá\\
+        \today
+    \end{center}
+\end{titlepage}
+\makeatother
+
+\tableofcontents
+\newpage
+
+\section{Exercício 1}
+
+
+\end{document}
