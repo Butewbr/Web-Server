@@ -25,10 +25,10 @@ if __name__ == "__main__": # Iniciamos o main
     n_of_requests = int(input("Digite a quantidade de requisições a serem feitas (entre 1 e 30): ")) # Pedimos um número de requisições a serem feitas ao servidor
 
     for i in range(n_of_requests): # Criamos um loop para pedir diferentes requisições 
-        if i%2 == 0: # Caso o loop esteja em uma iteração par
-            thread = Thread(target = send_request("GET /aaa HTTP/1.1")) # A requisição será feita para uma página não existente, retornando o 404.html
-        elif i%3 == 0: # Caso o loop esteja em uma iteração múltipla de 3
+        if i%3 == 0: # Caso o loop esteja em uma iteração múltipla de 3
             thread = Thread(target = send_request("GET /request HTTP/1.1")) # A requisição será feita para a página request
+        elif i%2 == 0: # Caso o loop esteja em uma iteração par
+            thread = Thread(target = send_request("GET /aaa HTTP/1.1")) # A requisição será feita para uma página não existente, retornando o 404.html
         else: # Para o resto
             thread = Thread(target = send_request("GET / HTTP/1.1")) # A requisição será feita para a página inicial
         
